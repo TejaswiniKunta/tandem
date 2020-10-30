@@ -3,7 +3,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ##Snapshot of application
-![QuizApp](./public/ScreenShot of App.png)
+![ScreenShot](./public/ScreenShot of App.png)
+
+
 View the functioning here: [Link](https://www.youtube.com/watch?v=l_xQFmx0cYs)
 
 ## To run
