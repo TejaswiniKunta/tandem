@@ -1,12 +1,8 @@
+export function Header() {
 
-export function Header(){
-
-    return(
+    return (
         <div className="App-header">
-            <div>
-            Quiz Time
-        </div>
-
+            <h2>Quiz Time</h2>
         </div>
     );
 }
