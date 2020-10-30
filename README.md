@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ##Snapshot of application
-![ScreenShot](./public/ScreenShot of App.png)
+
+<img align="center" src="./public/ScreenShot of App.png">
 
 
 View the functioning here: [Link](https://www.youtube.com/watch?v=l_xQFmx0cYs)
