@@ -16,7 +16,7 @@ class Main extends Component {
 
     addAllOptions(quiz){
         var newQuiz = []
-        quiz.map(q=>{
+        quiz.forEach(q=>{
             const options = q.incorrect;
             if(options.indexOf(q.correct)<0){
                 options.push(q.correct);
@@ -40,7 +40,7 @@ class Main extends Component {
             <div>
             <div className="row">
                 <div className="col-sm-10"></div>
-                <div className="col-sm-3">
+                <div className="col-sm-2">
                     <Countdown className="count-down"
                                date={Date.now() + 18*100000}
                                onComplete={this.timeUp} /></div></div>

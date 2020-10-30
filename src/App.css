@@ -100,4 +100,10 @@ button:focus{
 }
 
 
+.tick-color{
+  color: darkseagreen;
+}
 
+.wrong-color {
+  color: crimson;
+}

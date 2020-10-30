@@ -1,8 +1,7 @@
 import React from 'react';
-import Options from "./Options";
 import ListGroup from "reactstrap/es/ListGroup";
-import ListGroupItemText from "reactstrap/es/ListGroupItemText";
 import ListGroupItemHeading from "reactstrap/es/ListGroupItemHeading";
+import Options from "./Options";
 
 
 function MultipleChoice({question,choices, answer,nextQuestion,addScore}){
@@ -10,19 +9,16 @@ function MultipleChoice({question,choices, answer,nextQuestion,addScore}){
     return(
         <div>
         <ListGroup>
-            <ListGroupItemHeading><h5>{question}</h5></ListGroupItemHeading>
-            <ListGroupItemText><Options choices={shuffleOptions(choices)}
-                                        nextQuestion = {nextQuestion}
-                                        addScore = {addScore}
-                                        question={question} answer={answer}/></ListGroupItemText>
+            <ListGroupItemHeading>{question}</ListGroupItemHeading>
+            <Options choices={shuffleOptions(choices)}
+                     nextQuestion = {nextQuestion}
+                     addScore = {addScore}
+                     question={question} answer={answer}/>
         </ListGroup>
 
         </div>
     );
 }
-
-
-
 
 
 function shuffleOptions(choices){
@@ -31,6 +27,7 @@ function shuffleOptions(choices){
 
     while (ctr > 0) {
         index = Math.floor(Math.random() * ctr);
+        ctr--;
         temp = choices[ctr];
         choices[ctr] = choices[index];
         choices[index] = temp;

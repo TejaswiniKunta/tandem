@@ -24,7 +24,7 @@ import {Modal,ModalBody,Button} from "reactstrap";
             this.setState(prevState => {
                 return {currentQuestion:prevState.currentQuestion+1}});
         } else{
-            this.toggleModal();
+            this.endTest();
         }
      }
 
@@ -53,8 +53,8 @@ import {Modal,ModalBody,Button} from "reactstrap";
             return(
                 <div key={index}>
                     {this.state.currentQuestion===index?
-                        <div className={"questions current-display"}>{q.question}</div>:
-                        <div className={"questions"}>{q.question}</div>
+                        <div className="questions current-display">{q.question}</div>:
+                        <div className="questions">{q.question}</div>
                     }
                 </div>
             )})
@@ -65,7 +65,7 @@ import {Modal,ModalBody,Button} from "reactstrap";
             </div>
                 <div className="col-sm-4">
                     <div className="current-question">
-                        <div><span>Question {this.state.currentQuestion + 1}</span>/{this.state.quiz.length}
+                        <div><span>Question {this.state.currentQuestion + 1}/</span>{this.state.quiz.length}
                     <MultipleChoice question={this.state.quiz[this.state.currentQuestion].question}
                                     answer={this.state.quiz[this.state.currentQuestion].correct}
                                     nextQuestion = {this.nextQuestion}
