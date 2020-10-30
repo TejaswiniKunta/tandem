@@ -33,7 +33,7 @@ class Main extends Component {
     To toggle Modal dialog box in Child component 'Quiz' when the count down timer is up
      */
     timeUp() {
-        this.child.current.toggleModal();
+        this.child.current.showScore();
     }
 
 
