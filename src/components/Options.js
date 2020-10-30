@@ -60,13 +60,14 @@ class Options extends Component {
                 <div key={index}>
                     <input
                         type="radio"
+
                         disabled={this.state.disableButton}
                         checked={this.state.choice === option}
                         name="radioGroup"
                         value={option}
                         onChange={this.selectedValue}
                     />
-                    <span><label htmlFor={option}>{option}</label></span>
+                    <span  className="space"><label htmlFor={option}>{option}</label></span>
                 </div>
 
             );
@@ -74,7 +75,7 @@ class Options extends Component {
         return (
             <div>{options}
                 <form>
-                    <input type="button" value="Confirm" disabled={this.state.disableButton}
+                    <input type="button"  value="Confirm" disabled={this.state.disableButton}
                            onClick={() => this.submitResponse(this.state.choice)}/>
                     {this.state.disableButton ?
                         <input type="button" className="submit-button" value="Next" onClick={this.next}/> : <div></div>}
