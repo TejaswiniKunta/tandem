@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +21,83 @@
     transform: rotate(360deg);
   }
 }
+
+.App-header {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.current-display{
+  font-weight: bold;
+  width: auto !important;
+  background-color: lightgray !important;
+  border: 5px solid lightgray !important;
+}
+
+.questions{
+  margin: 2px;
+  background-color: lightblue;
+  width: 550px;
+  border: 5px solid lightblue;
+}
+
+.current-question{
+  margin: 20px;
+  background-color: lightblue;
+  width: auto;
+  border: 20px solid lightblue;
+}
+
+.end-test{
+  margin-top: 80px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: unset;
+  width: 260px;
+  color: #fffafa;
+  height: 50px;
+  margin-left: 70px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+button:focus{
+  outline: none;
+}
+
+.count-down{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.submit-button{
+  width: 81px;
+  margin-left: 25px;
+}
+.space{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+
+.popup-contentCenter{
+  font-size: 30px;
+  font-weight: bold;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
