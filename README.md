@@ -7,7 +7,7 @@ This project was bootstrapped with the help of [Create React App](https://github
 <img align="center" src="./public/ScreenShot of App.png">
 
 
-View the functioning here: [Link](https://www.youtube.com/watch?v=l_xQFmx0cYs)
+Click this link to watch the demo: [Link](https://www.youtube.com/watch?v=l_xQFmx0cYs)
 
 ## Use the following commands to run the application: 
 
